@@ -48,8 +48,9 @@
 //   );
 // };
 
-import NavBar from "./components/Header";
+import NavBar from "./components/NavBar";
 import { useState } from "react";
+import Titles from "./components/Titles";
 
 const App = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -60,6 +61,11 @@ const App = () => {
         setIsSidebarOpen={setIsSidebarOpen}
         isSidebarOpen={isSidebarOpen}
       ></NavBar>
+      <main className="">
+        <Titles styles=" ">
+          Make the Internet, a React and Typescript hellscape.
+        </Titles>
+      </main>
     </>
   );
 };

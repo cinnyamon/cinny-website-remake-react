@@ -49,25 +49,17 @@
 // };
 
 import NavBar from "./components/Header";
-import SideBar from "./components/SideBar";
+import { useState } from "react";
 
 const App = () => {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
   return (
     <>
       <NavBar
-        links={[
-          { text: "home", href: "https://cinny.neocities.org" },
-          { text: "github", href: "https://www.github.com/cinnyamon" },
-        ]}
+        setIsSidebarOpen={setIsSidebarOpen}
+        isSidebarOpen={isSidebarOpen}
       ></NavBar>
-      <SideBar
-        links={[
-          { href: "#", linkText: " About me" },
-          { href: "@", linkText: " Links" },
-          { href: "!", linkText: " Fav artist" },
-          { href: "^", linkText: " Meow" },
-        ]}
-      ></SideBar>
     </>
   );
 };

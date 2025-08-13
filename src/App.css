@@ -67,3 +67,17 @@ a:hover {
 p {
   margin: 0;
 }
+
+.rainbow {
+  background: linear-gradient(to right,
+        #e6348d 20%,
+        #6f00ff 30%,
+        #00affa 50%,
+        #234bea 70%,
+        #e74abd 80%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 500% auto;
+    animation: textgradient 5s ease-in-out infinite alternate;
+}

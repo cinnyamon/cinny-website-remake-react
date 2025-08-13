@@ -23,8 +23,8 @@ export default function NavBar({
   ];
 
   return (
-    <nav className="flex place-content-around items-center h-[55px] border-t-indigo-700 border-t fixed w-[100%] ">
-      <div className="">
+    <nav className=" fixed w-[100%] h-[55px] border-t-indigo-700 border-t z-30 bg-gradient-to-b from-black to-transparent ">
+      <div className=" flex place-content-around items-center h-[100%] w-[100%] ">
         {links.map((link, index) => (
           <p key={index} className="text-[14px]">
             {" "}

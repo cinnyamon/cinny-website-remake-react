@@ -17,7 +17,7 @@ const SideBar = forwardRef<HTMLDivElement>((_props, ref) => {
     <>
       <div
         ref={ref}
-        className=" fixed w-[150px] right-[-150px] bg-[#080809] border h-[60vh] pt-[50px] overflow-auto rounded-bl-[8px] rounded-l-[8px] border-indigo-700 "
+        className=" fixed w-[150px] right-[-150px] top-0 bg-[#080809] border h-[60vh] pt-[50px] overflow-auto rounded-bl-[8px] rounded-l-[8px] border-indigo-700 "
       >
         <div className="flex flex-col items-end gap-[20px] p-[20px] ">
           {linksSidebar.map((link, index) => (

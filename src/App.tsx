@@ -51,6 +51,9 @@
 import NavBar from "./components/NavBar";
 import { useState } from "react";
 import Titles from "./components/Titles";
+import Terminal from "./components/Terminal";
+
+// import image from "./assets/window-close.svg";
 
 const App = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -61,10 +64,13 @@ const App = () => {
         setIsSidebarOpen={setIsSidebarOpen}
         isSidebarOpen={isSidebarOpen}
       ></NavBar>
-      <main className="">
-        <Titles styles=" ">
-          Make the Internet, a React and Typescript hellscape.
+      <main className=" w-[100%] h-[100%] py-[55px] ">
+        <Titles styles=" text-center ">
+          Placeholder title. Placeholder title{" "}
+          <span className="rainbow"> placeholder </span> title placeholder{" "}
+          <span className="rainbow"> title </span>.
         </Titles>
+        <Terminal></Terminal>
       </main>
     </>
   );

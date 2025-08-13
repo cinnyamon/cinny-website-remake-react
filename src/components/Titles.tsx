@@ -1,5 +1,5 @@
 interface titleProps {
-  children: string;
+  children: React.ReactNode;
   styles: string;
 }
 

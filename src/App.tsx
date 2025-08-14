@@ -67,8 +67,8 @@ const App = () => {
       <main className=" w-[100%] h-[100%] py-[55px] ">
         <Titles styles=" text-center ">
           Placeholder title. Placeholder title{" "}
-          <span className="rainbow"> placeholder </span> title placeholder{" "}
-          <span className="rainbow"> title </span>.
+          <span className="text-pink-100 CUSTOM COLOR"> placeholder </span>{" "}
+          title placeholder <span className="rainbow"> title </span>.
         </Titles>
         <Terminal></Terminal>
       </main>
